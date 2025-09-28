@@ -1,7 +1,19 @@
 ---
 import Base from "../layouts/Base.astro";
+import Hero from "../components/home/Hero.astro";
+import About from "../components/home/About.astro";
+import Services from "../components/home/Services.astro";
+import Menu from "../components/home/Menu.astro";
+import Locations from "../components/home/Locations.astro";
+import Gallery from "../components/home/Gallery.astro";
+import Contact from "../components/home/Contact.astro";
 ---
-<Base title="Cafetería">
-  <h1 class="text-2xl font-bold">Bienvenido a la Cafetería</h1>
-  <p class="mt-4">Proyecto base en Astro, limpio y listo para empezar.</p>
+<Base title="Cafetería Ebenezer — Inicio">
+  <Hero slot="full" />
+  <About  />
+  <Services />
+  <Menu />
+  <Locations />
+  <Gallery />
+  <Contact />
 </Base>

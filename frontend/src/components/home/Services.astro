@@ -1,0 +1,19 @@
+---
+const items = [
+  { t: "Café de especialidad", d: "Espresso, filtrados y métodos." },
+  { t: "Pastelería", d: "Opciones clásicas y sin gluten." },
+  { t: "Desayunos y brunch", d: "Sándwiches, bowls y jugos." },
+  { t: "Eventos", d: "Coffee break y catering para empresas." },
+];
+---
+<section id="services" class="py-12">
+  <h2 class="text-2xl font-semibold mb-6">Servicios</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    {items.map(i => (
+      <div class="p-4 bg-white rounded border">
+        <h3 class="font-semibold">{i.t}</h3>
+        <p class="text-sm text-gray-600">{i.d}</p>
+      </div>
+    ))}
+  </div>
+</section>

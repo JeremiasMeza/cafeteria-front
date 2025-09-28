@@ -1,0 +1,21 @@
+---
+const featured = [
+  { n: "Capuccino", d: "Doble espresso + leche espumada", p: "$3.200" },
+  { n: "Latte Vainilla", d: "Espresso, leche y jarabe natural", p: "$3.500" },
+  { n: "Cheesecake", d: "Clásico estilo NY", p: "$3.800" },
+  { n: "Sándwich Pavo", d: "Pan masa madre, palta, rúcula", p: "$4.500" },
+];
+---
+<section id="menu" class="py-12">
+  <h2 class="text-2xl font-semibold mb-6">Menú destacado</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    {featured.map(m => (
+      <div class="p-4 bg-white rounded shadow-sm">
+        <h3 class="font-semibold">{m.n}</h3>
+        <p class="text-sm text-gray-600">{m.d}</p>
+        <p class="mt-2 font-medium">{m.p}</p>
+      </div>
+    ))}
+  </div>
+  <a href="#" class="inline-block mt-4 text-gray-700 underline">Ver carta completa (PDF)</a>
+</section>
